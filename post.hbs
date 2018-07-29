@@ -54,11 +54,11 @@ into the {body} of the default.hbs template --}}
                 from includes/byline-multiple.hbs, otherwise, we just use the
                 default byline. --}}
 
-                {{#has author="count:>1"}}
+                {{!-- {{#has author="count:>1"}}
                     {{> "byline-multiple"}}
                 {{else}}
                     {{> "byline-single"}}
-                {{/has}}
+                {{/has}} --}}
 
             </footer>
 
@@ -108,17 +108,18 @@ into the {body} of the default.hbs template --}}
                 </article>
                 {{/if}}
             {{/get}}
+
+                {{!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs --}}
+                {{#next_post in="primary_tag"}}
+                    {{> "post-card"}}
+                {{/next_post}}
+
+                {{!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs --}}
+                {{#prev_post in="primary_tag"}}
+                    {{> "post-card"}}
+                {{/prev_post}}
+
             {{/if}}
-
-            {{!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs --}}
-            {{#next_post}}
-                {{> "post-card"}}
-            {{/next_post}}
-
-            {{!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs --}}
-            {{#prev_post}}
-                {{> "post-card"}}
-            {{/prev_post}}
 
         </div>
     </div>
