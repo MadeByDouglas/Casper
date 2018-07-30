@@ -3,7 +3,8 @@
 
 :root {
     /* Colours */
-    --blue: #3eb0ef;
+    --blue: #007AFF;
+    --casperBlue: #3eb0ef;
     --green: #a4d037;
     --purple: #ad26b4;
     --yellow: #fecd35;
@@ -12,6 +13,7 @@
     --midgrey: #738a94;
     --lightgrey: #c5d2d9;
     --whitegrey: #e5eff5;
+    --white: #ffffff;
     --pink: #fa3a57;
     --brown: #a3821a;
 }
@@ -431,14 +433,14 @@ h5,
 h6 {
     margin-top: 0;
     line-height: 1.15;
-    font-weight: 700;
+    font-weight: 600;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
     margin: 0 0 0.5em 0;
     font-size: 5rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 @media (max-width: 500px) {
     h1 {

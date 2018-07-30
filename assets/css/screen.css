@@ -32,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+    background: var(--white);
 }
 
 .img {
@@ -163,7 +163,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 3.8rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .site-logo {
@@ -234,7 +234,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     color: #fff;
     font-size: 1.7rem;
     line-height: 1em;
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: -0.5px;
 }
 
@@ -452,7 +452,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-excerpt {
-    font-family: Georgia, serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .post-card-meta {
@@ -734,7 +734,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     margin: 0 auto;
     padding: 70px 100px 0;
     min-height: 230px;
-    font-family: Georgia, serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 2.2rem;
     line-height: 1.6em;
     background: #fff;
@@ -888,7 +888,7 @@ Usage (In Ghost editor):
 .post-full-content blockquote {
     margin: 0 0 1.5em;
     padding: 0 1.5em;
-    border-left: #3eb0ef 3px solid;
+    border-left: var(--blue) 3px solid;
 }
 
 .post-full-content blockquote p {
@@ -971,7 +971,7 @@ Usage (In Ghost editor):
 .post-full-content h1 {
     margin: 0.5em 0 0.2em 0;
     font-size: 4.6rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 @media (max-width: 500px) {
     .post-full-content h1 {
@@ -982,7 +982,7 @@ Usage (In Ghost editor):
 .post-full-content h2 {
     margin: 0.5em 0 0.2em 0;
     font-size: 3.6rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 @media (max-width: 500px) {
     .post-full-content h2 {
@@ -993,7 +993,7 @@ Usage (In Ghost editor):
 .post-full-content h3 {
     margin: 0.5em 0 0.2em 0;
     font-size: 2.8rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 @media (max-width: 500px) {
     .post-full-content h3 {
@@ -1004,7 +1004,7 @@ Usage (In Ghost editor):
 .post-full-content h4 {
     margin: 0.5em 0 0.2em 0;
     font-size: 2.8rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 @media (max-width: 500px) {
     .post-full-content h4 {
@@ -1018,7 +1018,7 @@ Usage (In Ghost editor):
     padding: 1em 0 1.5em;
     border: 0;
     color: var(--blue);
-    font-family: Georgia,serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
@@ -1039,7 +1039,7 @@ Usage (In Ghost editor):
 .post-full-content h6 {
     margin: 0.5em 0 0.2em 0;
     font-size: 2.3rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 @media (max-width: 500px) {
     .post-full-content h6 {
@@ -1062,7 +1062,7 @@ Usage (In Ghost editor):
 .footnote-backref {
     color: var(--blue) !important;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 600;
     text-decoration: none !important;
     box-shadow: none !important;
 }
@@ -1128,7 +1128,7 @@ Usage (In Ghost editor):
 .post-full-content table th {
     color: var(--darkgrey);
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.2px;
     text-align: left;
     text-transform: uppercase;
@@ -1160,7 +1160,7 @@ Usage (In Ghost editor):
     color: var(--darkgrey);
     font-size: 3.5rem;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .subscribe-form p {
@@ -1290,7 +1290,7 @@ Usage (In Ghost editor):
 
 .author-card-name a {
     color: var(--darkgrey);
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .author-card-name a:hover {
@@ -1650,7 +1650,7 @@ Usage (In Ghost editor):
     align-items: center;
     color: var(--darkgrey);
     line-height: 1.1em;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .floating-header-logo a:hover {
@@ -1674,7 +1674,7 @@ Usage (In Ghost editor):
     color: #2e2e2e;
     font-size: 1.6rem;
     line-height: 1.3em;
-    font-weight: bold;
+    font-weight: 600;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -1936,7 +1936,7 @@ Usage (In Ghost editor):
     justify-content: center;
     align-items: center;
     margin: 0 0 10px 0;
-    font-family: Georgia, serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-style: italic;
 }
 
@@ -2075,7 +2075,7 @@ Usage (In Ghost editor):
 .subscribe-overlay-description {
     margin: 0 auto 50px;
     max-width: 650px;
-    font-family: Georgia, serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 3rem;
     line-height: 1.3em;
     font-weight: 300;
